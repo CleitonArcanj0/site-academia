@@ -1,0 +1,51 @@
+@theme {
+    --color-bg: #0A0A0E;
+    --color-text: #F5F5F0;
+    --color-primary: #F00813;
+    --color-primary-hover: #f8313b;
+    --color-primary-muted: color-mix(in srgb, var(--color-primary) 15%, var(--color-bg));
+    --color-text-muted: color-mix(in srgb, var(--color-text) 75%, var(--color-bg));
+
+
+    --font-display: "Archivo Black", sans-serif;
+    --font-body: "Inter", sans-serif;
+    --font-weight-display: 800;
+    --font-weight-normal: 400;
+
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2.5rem;
+    --spacing-xl: 4rem;
+    --spacing-2xl: 6rem;
+
+    /* Radius — mesma escala do sistema */
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-full: 999px;
+
+
+    /* ============================================
+                               | TRANSIÇÕES | 
+     
+     SE A TRANSIÇÃO FOR MAIOR QUE ~400-500ms, geralmente não é mais transição e sim animação.
+  ============================================ */
+    /*hover de um button, toggle de ícone, mudança de cor de texto, estado de foco em input*/
+    /*MICRO-INTERAÇÕES,  COISAS PEQUENAS E FREQUENTES*/
+    --transition-duration-fast: 150ms ;
+
+    /*card levantando no hover, abrir/fechar dropdown, modal, troca de abas(tabs)*/
+    /*A MAIORIA DAS INTERAÇÕES DE COMPONENTES*/
+    --transition-duration-base: 250ms ;
+
+
+    /*Mudanças grandes, de layout, ou que "contam uma história"*/
+    /*Accordion abrindo, Seção interia revelando ao rolar a página (scroll reveal), Transição entre páginas/rotas, Hero com elementos aparecendo com sequência*/
+    --transition-duration-slow: 400ms ;
+
+
+    --ease-fast: ease;
+    --ease-base: ease;
+
+}
+

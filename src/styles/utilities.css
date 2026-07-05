@@ -1,0 +1,15 @@
+/* src/styles/utilities.css
+   Peças isoladas, sem identidade própria — combinam com qualquer elemento.
+   Diferente de components.css: aqui não tem estado (hover), nem múltiplas
+   responsabilidades agrupadas, só uma função isolada por classe.
+*/
+
+@utility container-custom {
+    max-width: 1728px;
+    margin-inline: auto;
+    padding-inline: var(--spacing-md);
+}
+
+@utility text-constrained{
+    max-width: 750px
+}
