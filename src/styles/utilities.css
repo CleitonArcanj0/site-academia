@@ -10,6 +10,27 @@
     padding-inline: var(--spacing-md);
 }
 
-@utility text-constrained{
+@utility text-constrained {
     max-width: 750px
+}
+
+@utility reset {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@utility card-lift {
+    transition:
+        transform var(--transition-duration-base) var(--ease-base),
+        box-shadow var(--transition-duration-base) var(--ease-base),
+        border-color var(--transition-duration-base) var(--ease-base);
+}
+.card-lift:hover {
+    transform: translateY(-8px);
+
+    border-color: var(--color-primary);
+
+    box-shadow:
+        0 12px 24px rgba(0,0,0,.12),
+        0 24px 48px rgba(0,0,0,.10);
 }

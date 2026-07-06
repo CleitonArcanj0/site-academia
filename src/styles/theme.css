@@ -10,7 +10,7 @@
     --font-display: "Archivo Black", sans-serif;
     --font-body: "Inter", sans-serif;
     --font-weight-display: 800;
-    --font-weight-normal: 400;
+    --font-weight-normal: 500;
 
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
@@ -32,20 +32,50 @@
   ============================================ */
     /*hover de um button, toggle de ícone, mudança de cor de texto, estado de foco em input*/
     /*MICRO-INTERAÇÕES,  COISAS PEQUENAS E FREQUENTES*/
-    --transition-duration-fast: 150ms ;
+    --transition-duration-fast: 150ms;
 
     /*card levantando no hover, abrir/fechar dropdown, modal, troca de abas(tabs)*/
     /*A MAIORIA DAS INTERAÇÕES DE COMPONENTES*/
-    --transition-duration-base: 250ms ;
+    --transition-duration-base: 250ms;
 
 
     /*Mudanças grandes, de layout, ou que "contam uma história"*/
     /*Accordion abrindo, Seção interia revelando ao rolar a página (scroll reveal), Transição entre páginas/rotas, Hero com elementos aparecendo com sequência*/
-    --transition-duration-slow: 400ms ;
+    --transition-duration-slow: 400ms;
 
 
     --ease-fast: ease;
     --ease-base: ease;
 
+}
+
+.planos {
+    position: relative;
+    overflow: hidden;
+
+}
+
+.planos::before,
+.planos::after {
+    content: "";
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    filter: blur(120px);
+    opacity: .10;
+}
+
+.planos::before {
+    background: var(--color-primary);
+    top: -180px;
+    left: -120px;
+}
+
+
+.planos::after {
+    background: var(--color-primary);
+    bottom: -200px;
+    right: -120px;
 }
 

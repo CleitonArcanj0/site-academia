@@ -14,11 +14,16 @@
   <title>academia</title>
 </head>
 
-<body class="bg-bg">
-  <nav class="bg-white py-sm max-h-150">
-    <div class="container-custom flex flex-wrap items-center justify-between ">
-      <span>LOGO</span>
-      <img src="/public/menuicon.svg" alt="menu hambúrguer" id="menuIcon" class="relative md:hidden h-12 transition-transform duration-fast ease-fast">
+<body class="bg-bg reset">
+  <nav class=" bg-white py-sm max-h-150 inline-flex w-full justify-around items-center sticky top-0 z-50 shadow-md">
+    <div class="container-custom w-full flex justify-between items-center">
+
+      <div class="flex items-center">
+        <img src="/public/logoAcademia.webp" alt="logo da academia" class="h-20 object-contain">
+      </div>
+
+      <img src="/public/menuicon.svg" alt="menu hambúrguer" id="menuIcon"
+        class="relative md:hidden h-12 transition-transform duration-fast ease-fast">
 
       <ul class="hidden  md:inline-flex py-2 space-x-10 " id="menuSections">
         <li class="font-semibold  font-body hover:text-primary-hover hover:duration-fast hover:ease-fast">Planos</li>
@@ -29,13 +34,14 @@
           localização</li>
       </ul>
     </div>
+
   </nav>
   <main>
-    <section class="min-h-[70vh] md:min-h-[80vh]  py-2xl relative">
+    <section class="min-h-[70vh] md:min-h-[85vh]  py-2xl relative">
 
       <div class="bg-[url(/public/bg-hero.png)] h-full  bg-cover bg-center inset-0 absolute -z-10"></div>
 
-      <div class="bg-bg/70 h-full w-full lg:w-[50%] absolute inset-0 -z-10" ></div>
+      <div class="bg-bg/70 h-full w-full lg:w-[50%] absolute inset-0 -z-10"></div>
 
       <div class="container-custom flex flex-col  gap-lg z-20">
 
@@ -62,15 +68,15 @@
         </div>
 
         <ul class="flex gap-lg">
-          <li class="flex flex-col">
+          <li class="flex flex-col items-center">
             <strong class="font-display text-primary">150+</strong>
             <span class="font-body text-text">alunos</span>
           </li>
-          <li class="flex flex-col">
-            <strong class="font-display text-primary">4.9*</strong>
+          <li class="flex flex-col items-center">
+            <strong class="font-display text-primary">4.9&#9733;</strong>
             <span class="font-body text-text">avaliação</span>
           </li>
-          <li class="flex flex-col">
+          <li class="flex flex-col items-center">
             <strong class="font-display text-primary">2015</strong>
             <span class="font-body text-text">desde</span>
           </li>
@@ -78,13 +84,113 @@
       </div>
 
     </section>
-    <section class="bg-white min-h-[80vh]">
 
-      <div class="container-custom">
+    <section class="bg-white min-h-[80vh] py-2xl planos">
 
-      </div>
+
+      <div class="container-custom space-y-lg">
+
+        <div>
+          <h1 class="font-display text-3xl lg:text-5xl text-primary ">Planos</h1>
+          <p class="font-body text-sm lg:text-lg">Escolha o plano que melhor se encaixa no seu
+            objetivo</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-lg">
+
+          <div class="flex flex-col gap-sm  bg-bg/90 border-2 border-primary rounded-sm overflow-hidden card-lift">
+
+            <div class="h-64">
+              <img src="src/assets/plano1.webp" alt="imagem do plano 1" class="w-full h-full object-cover inset-0 ">
+            </div>
+
+            <div class="flex flex-col items-center  justify-end gap-sm p-lg md:py-sm">
+
+              <div class="flex flex-col items-center justify-end gap-sm">
+
+                <span class="font-body font-bold text-4xl text-text">Light</span>
+
+                <span class="font-body  text-sm text-text text-center">Acesso Livre, Seus Dias, Suas Regras</span>
+
+                <span class="font-display text-text-muted text-sm">R$
+                  <span class="text-4xl text-text">90,00</span><span class="text-sm text-text-muted">/mês</span>
+                </span>
+
+              </div>
+
+              <div class="border border-primary/70 w-full"></div>
+
+              <a href="#"
+                class="bg-primary hover:bg-primary-hover font-body font-bold text-text text-2xl  rounded-sm py-2 px-12">Matricule-se</a>
+
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-sm  bg-bg/90 border-2 border-primary rounded-sm overflow-hidden card-lift ">
+            <div class="h-64 relative">
+
+              <span
+                class="text-text text-xs font-body font-bold bg-primary/80 rounded-sm p-2 right-2 top-4 z-20 absolute">Mais
+                escolhido</span>
+
+              <img src="src/assets/plano2.webp" alt="imagem do plano 2" class="w-full h-full object-cover inset-0 ">
+
+            </div>
+
+            <div class="flex flex-col items-center   justify-end gap-sm p-lg md:py-sm">
+
+              <div class="flex flex-col items-center justify-center gap-sm">
+
+                <span class="font-body font-bold text-4xl text-text">Mensal</span>
+
+                <span class="font-body  text-sm text-text text-center">Acesso Total, Musculação & Todas as Aulas
+                  Coletivas</span>
+
+                <span class="font-display text-text-muted text-sm">R$
+                  <span class="text-4xl text-text">120,00</span><span class="text-sm text-text-muted">/mês</span>
+                </span>
+
+              </div>
+
+              <div class="border border-primary/70 w-full"></div>
+
+              <a href="#"
+                class="bg-primary hover:bg-primary-hover font-body font-bold text-text text-2xl  rounded-sm py-2 px-12">Matricule-se</a>
+
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-sm  bg-bg/90 border-2 border-primary rounded-sm overflow-hidden card-lift">
+
+            <div class="h-64">
+              <img src="src/assets/plano3.webp" alt="imagem do plano 3" class="w-full h-full object-cover inset-0 ">
+            </div>
+
+            <div class="flex flex-col items-center  justify-end gap-sm p-lg md:py-sm">
+
+              <div class="flex flex-col items-center justify-start gap-sm">
+
+                <span class="font-body font-bold text-4xl text-text">Anual</span>
+
+                <span class="font-body  text-sm text-text text-center">Melhor Custo-Benefício</span>
+
+                <span class="font-display text-text-muted text-sm">R$
+                  <span class="text-4xl text-text">900,00</span><span class="text-sm text-text-muted">/anual</span>
+                </span>
+
+              </div>
+
+              <div class="border border-primary/70 w-full"></div>
+
+              <a href="#"
+                class="bg-primary hover:bg-primary-hover font-body font-bold text-text text-2xl  rounded-sm py-2 px-12">Matricule-se</a>
+
+            </div>
+          </div>
+        </div>
 
     </section>
+
     <section>
 
       <div class="container-custom">
@@ -104,5 +210,6 @@
     </div>
   </footer>
 </body>
-<script type="module" src="/src/main.js" ></script>
+<script type="module" src="/src/main.js"></script>
+
 </html>
