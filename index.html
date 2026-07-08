@@ -6,6 +6,7 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="stylesheet" href="./src/styles/output.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="shortcut icon" href="public/logoAcademia.webp" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
@@ -26,12 +27,17 @@
         class="relative md:hidden h-12 transition-transform duration-fast ease-fast">
 
       <ul class="hidden  md:inline-flex py-2 space-x-10 " id="menuSections">
-        <li class="font-semibold  font-body hover:text-primary-hover hover:duration-fast hover:ease-fast">Planos</li>
-        <li class="font-semibold  font-body hover:text-primary-hover  hover:duration-fast hover:ease-fast">Modalidades
-        </li>
-        <li class="font-semibold  font-body hover:text-primary-hover  hover:duration-fast hover:ease-fast">Galeria</li>
-        <li class="font-semibold  font-body hover:text-primary-hover  hover:duration-fast hover:ease-fast">Contato e
-          localização</li>
+        <li class="font-semibold  font-body hover:text-primary-hover hover:duration-fast hover:ease-fast"><a
+            href="#planos">Planos</a></li>
+
+        <li class="font-semibold  font-body hover:text-primary-hover  hover:duration-fast hover:ease-fast"><a
+            href="#galeria">Galeria</a></li>
+
+        <li class="font-semibold  font-body hover:text-primary-hover  hover:duration-fast hover:ease-fast"><a
+            href="#localizacao-contato">
+            Contato e
+            localização
+          </a></li>
       </ul>
     </div>
 
@@ -85,7 +91,7 @@
 
     </section>
 
-    <section class="bg-white min-h-[80vh] py-2xl">
+    <section id="planos" class="bg-white min-h-[80vh] py-2xl">
 
       <div class="container-custom space-y-lg">
 
@@ -190,7 +196,7 @@
 
     </section>
 
-    <section class="bg-bg/80 min-h-[85vh] py-xl lg:py-2xl">
+    <section id="galeria" class="bg-bg/80 min-h-[85vh] py-xl lg:py-2xl">
 
       <div class="container-custom  space-y-xl">
 
@@ -282,17 +288,150 @@
       </div>
 
     </section>
-    <section class="bg-white min-h-[80vh] py-xl lg:py-2xl">
+    <section id="localizacao-contato" class="bg-white min-h-[80vh] py-xl lg:py-2xl">
+
+
+      <div class="container-custom  space-y-lg">
+        <div class=" space-y-sm">
+          <h2 class="font-display text-3xl lg:text-5xl text-primary ">Contato e localização</h2>
+          <p class="font-body font-semibold text-sm lg:text-lg">Veja onde estamos localizados e a forma de entrar em
+            contato conosco.</p>
+
+
+        </div>
+
+        <div class="space-y-8">
+
+          <div class="flex flex-col space-y-4">
+          
+            <div class="inline-flex items-center gap-2">
+          
+              <img src="src/assets/placeholder-gps-svgrepo-com.svg" alt="localização" srcset="" class="h-6">
+          
+              <p class="font-body  text-sm lg:text-lg">
+                São João Marques, 23
+              </p>
+          
+            </div>
+          
+            <div class="inline-flex gap-2">
+             
+              <img src="src/assets/whatsapp-color-svgrepo-com.svg" alt="whatsapp" srcset="" class="h-6">
+             
+              <p class="font-body  text-sm lg:text-lg ">WhatsApp: 99 9 9999 - 9999</p>
+           
+            </div>
+
+          </div>
+          <div class="flex flex-col md:flex-row gap-4 ">
+            <a href="#"
+              class="bg-primary hover:bg-primary-hover font-body font-bold text-text text-2xl  text-center rounded-sm py-2 px-4 lg:px-12">Como
+              chegar</a>
+
+            <a href="#"
+              class="bg-primary hover:bg-primary-hover font-body font-bold text-text text-2xl text-center rounded-sm py-2 px-4 lg:px-12">Falar
+              no WhatsApp</a>
+
+          </div>
+          <div class="w-full h-96 border-2 border-primary/50">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d30905.308840760095!2d-38.46235812993164!3d-12.941157658488775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1spt-BR!2sbr!4v1783532407036!5m2!1spt-BR!2sbr"
+              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
+          </div>
+
+        </div>
+
+      </div>
+
     </section>
 
-
-
-
-
   </main>
-  <footer>
-    <div>
 
+  <footer class="bg-bg min-h-[40vh] py-xl">
+
+    <div
+      class="container-custom flex flex-col justify-center items-center gap-6 md:flex-row md:justify-between md:items-start md:space-x-12 ">
+
+      <div class="flex items-center">
+        <img src="/public/logoAcademia.webp" alt="logo da academia" class="h-32 object-contain">
+      </div>
+
+      <div>
+        <ul class="flex flex-col items-center md:items-start py-2 space-y-6 ">
+          <strong class="text-primary text-lg font-body  ">Navegação</strong>
+          <li class="text-text font-body hover:text-primary-hover hover:duration-fast hover:ease-fast">
+            <a href="#planos">Planos</a>
+          </li>
+
+
+          <li class="text-text font-body hover:text-primary-hover  hover:duration-fast hover:ease-fast">
+            <a href="#galeria">Galeria</a>
+          </li>
+
+          <li class=" text-text font-body hover:text-primary-hover  hover:duration-fast hover:ease-fast">
+            <a href="#localizacao-contato">
+              Contato e
+              localização
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div>
+        <ul class="flex flex-col   items-center md:items-start py-2 space-y-6">
+          <strong class="text-primary text-lg font-body ">Contato</strong>
+
+          <li
+            class=" text-text font-body hover:text-primary-hover  hover:duration-fast hover:ease-fast inline-flex items-center gap-4">
+            <div class="h-6">
+              <img src="src/assets/whatsapp-color-svgrepo-com.svg" alt="logo Academia" srcset=""
+                class="h-full object-cover">
+            </div>
+            <span>WhatsApp: (71) 99388 - 8629</span>
+          </li>
+
+          <li
+            class="text-text font-body hover:text-primary-hover  hover:duration-fast hover:ease-fast inline-flex items-center gap-4">
+
+            <div class="h-6">
+              <img src="src/assets/instagram-color-svgrepo-com.svg" alt="Instagram" srcset="" class="h-full object-cover">
+            </div>
+
+            <a href="https://www.instagram.com/_arcanjooficial/" target="_blank">Instagram: @_arcanjooficial</a>
+
+          </li>
+
+          <li
+            class="text-text font-body hover:text-primary-hover  hover:duration-fast hover:ease-fast inline-flex items-center gap-4">
+
+            <div class="h-6">
+              <img src="src/assets/linkedin-color-svgrepo-com.svg" alt="linkedIn" srcset="" class="h-full object-cover">
+            </div>
+
+            <a href="https://www.linkedin.com/in/cleiton-arcanjo-614a6a36a/" target="_blank">LinkedIn: Cleiton Arcanjo
+            </a>
+          </li>
+
+          <li
+            class="text-text font-body hover:text-primary-hover  hover:duration-fast hover:ease-fast inline-flex items-center gap-4">
+
+            <div class="h-6">
+              <img src="src/assets/github-color-svgrepo-com.svg" alt="github" srcset="" class="h-full object-cover">
+            </div>
+
+            <a href="https://github.com/CleitonArcanj0" target="_blank">GitHub: Cleiton Arcanjo </a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+
+    <div class="text-center my-16 px-4 py-6 border-t border-gray-800">
+      <p class="text-text text-xs">Copyright — &copy; 2026 Cleiton Arcanjo. Todos os direitos reservados.</p>
     </div>
   </footer>
 </body>
