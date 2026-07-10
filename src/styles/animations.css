@@ -1,0 +1,26 @@
+.fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+
+    animation-name: fadeup;
+    animation-duration: 500ms;
+    animation-delay: 400ms;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: normal;
+}
+
+.fade-up.show{
+    animation: fade-up 400ms linear 500ms normal forwards;
+}
+
+@keyframes fade-up {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

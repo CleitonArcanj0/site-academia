@@ -25,6 +25,7 @@
         box-shadow var(--transition-duration-base) var(--ease-base),
         border-color var(--transition-duration-base) var(--ease-base);
 }
+
 .card-lift:hover {
     transform: translateY(-8px);
 

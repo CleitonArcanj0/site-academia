@@ -3,8 +3,25 @@
 const icon = document.querySelector('#menuIcon');
 const menuSections = document.querySelector('#menuSections');
 const accordion = document.querySelector("#accordion")
+const elements = document.querySelectorAll(".fade-up")
 
 accordion.addEventListener('click', expandAccordion)
+
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show')
+        }
+    });
+}, {
+    threshold: 0.2
+});
+
+elements.forEach(item => {
+    observer.observe(item)
+})
+
 
 function expandAccordion(e) {
     let input = e.target

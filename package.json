@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.3.2",
-    "tailwindcss": "^4.3.2"
+    "tailwindcss": "^4.3.2",
+    "tailwindcss-animated": "^2.1.0"
   }
 }
