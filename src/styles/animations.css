@@ -3,15 +3,15 @@
     transform: translateY(20px);
 
     animation-name: fadeup;
-    animation-duration: 500ms;
-    animation-delay: 400ms;
+    animation-duration: 400ms;
+    animation-delay: 200ms;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
     animation-iteration-count: normal;
 }
 
 .fade-up.show{
-    animation: fade-up 400ms linear 500ms normal forwards;
+    animation: fade-up 400ms linear 200ms normal forwards;
 }
 
 @keyframes fade-up {

@@ -32,7 +32,7 @@
   ============================================ */
     /*hover de um button, toggle de ícone, mudança de cor de texto, estado de foco em input*/
     /*MICRO-INTERAÇÕES,  COISAS PEQUENAS E FREQUENTES*/
-    --transition-duration-fast: 150ms;
+    --transition-duration-fast: 200ms;
 
     /*card levantando no hover, abrir/fechar dropdown, modal, troca de abas(tabs)*/
     /*A MAIORIA DAS INTERAÇÕES DE COMPONENTES*/
